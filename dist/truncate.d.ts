@@ -54,8 +54,8 @@ export declare type IOptions = Partial<IFullOptions>;
  * truncate html interface
  */
 interface ITruncateHtml {
-    (html: string | CheerioStatic, length?: number, options?: IOptions): string;
-    (html: string | CheerioStatic, options?: IOptions): string;
+    (html: string, length?: number, options?: IOptions): string;
+    (html: string, options?: IOptions): string;
     setup: (option: IOptions) => void;
 }
 /**
